@@ -13,16 +13,13 @@
     font-family: "Poppins", sans-serif;
 }
 
-
 ::-webkit-scrollbar {
     width: 10px;
 }
 
-
 ::-webkit-scrollbar-track {
     background: var(--background1);
 }
-
 
 ::-webkit-scrollbar-thumb {
     background: white;
@@ -60,7 +57,6 @@ main {
     font-size: 35px;
 }
 
-
 .menu-itens {
     display: flex;
     list-style-type: none;
@@ -83,7 +79,6 @@ main {
 .menu-itens a:hover {
     color: #cecece;
 }
-
 
 /* INICIO */
 .container {
@@ -110,14 +105,12 @@ main {
 .img-perfil {
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
-
 }
 
 @keyframes flutuar {
     0% {
         top: 0;
     }
-
     100% {
         top: 30px;
     }
@@ -153,7 +146,6 @@ main {
     from {
         width: 0;
     }
-
     to {
         width: 100%;
     }
@@ -188,7 +180,6 @@ main {
 
 .btn-inicio:hover {
     background-color: #6274d6;
-
 }
 
 /* SOBRE MIM */
@@ -202,7 +193,6 @@ main {
     text-align: justify;
     font-size: 16px;
     background-color: var(--background1);
-
 }
 
 .sobre-texto {
@@ -210,15 +200,15 @@ main {
     padding: 10px;
     margin: 0 200px;
 }
+
 .sobre-graduacao{
     color: #dfdfe0c5;
 }
 .sobre-graduacao::before {
     content: "●";
     margin-right: 5px;
-    color: rgb(255, 255, 255);
+    color: #fff;
 }
-
 
 /* HABILIDADES */
 .habilidades {
@@ -229,7 +219,6 @@ main {
     display: flex;
     gap: 40px;
     flex-direction: column;
-
 }
 
 .hab-col-1,
@@ -294,9 +283,7 @@ swiper-slide img {
 }
 
 
-
 /* CONTATO */
-
 .fixed-buttons {
     position: fixed;
     top: 75%;

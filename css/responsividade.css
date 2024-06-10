@@ -1,14 +1,19 @@
+@media (max-width: 800px) {
+    .menu-itens {
+        display: none;
+    }
 
-@media (max-width: 768px) {
-   .menu-itens{
-    display: none;
-   }
-   .logo{
-    margin: auto;
-   }
+    .logo {
+        margin: auto;
+    }
+
     .container {
         flex-direction: column;
-      
+    }
+
+    .btn-inicio {
+        margin: 20px;
+        width: 90%;
     }
 
     .left,
@@ -23,13 +28,22 @@
     .right {
         order: 1;
     }
-    .sobre-texto{
-        margin: 0 20px;
+
+    .sobre-texto {
+        margin: auto;
     }
-    .btn-inicio{
+
+    .btn-inicio {
         display: block;
     }
-   
-   
+}
 
+@media (max-width: 500px) {
+    .habilidades {
+        padding: 96px 0;
+        margin: 0 10px;
+    }
+    .card{
+        width: 120px;
+    }
 }
