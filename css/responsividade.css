@@ -1,8 +1,14 @@
 
 @media (max-width: 768px) {
-    
+   .menu-itens{
+    display: none;
+   }
+   .logo{
+    margin: auto;
+   }
     .container {
         flex-direction: column;
+      
     }
 
     .left,
@@ -20,6 +26,10 @@
     .sobre-texto{
         margin: 0 20px;
     }
- 
+    .btn-inicio{
+        display: block;
+    }
+   
+   
 
 }
