@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsividade.css">
-    <link rel="shortcut icon" href="/IMG/letra-m.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/IMG/m.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <meta name="description" content="Portfólio do programador Mateus Fernandes">
     <meta name="keywords" content="dev,programação,portfólio,projetos">
@@ -27,8 +27,11 @@
             </ul>
         </nav>
     </header>
+
     <hr style="background: rgb(255, 255, 255); width: 100%; height: 3px;">
+
     <main>
+
         <section class="container animacao">
             <section class="left">
                 <h1 class="inicio-titulo">Mateus Fernandes</h1>
@@ -68,40 +71,52 @@
             <div class="container-cards">
                 <div class="hab-col-1">
                     <section class="card">
-                        <img src="IMG/HTML.png" alt="HTML" class="logo-habilidades">
+                        <img src="IMG/icones/HTML.png" alt="HTML" class="logo-habilidades">
                         <p class="card-texto">HTML</p>
                     </section>
                     <section class="card">
-                        <img src="IMG/css.png" alt="CSS" class="logo-habilidades">
+                        <img src="IMG/icones/css.png" alt="CSS" class="logo-habilidades">
                         <p class="card-texto">CSS</p>
                     </section>
                     <section class="card">
-                        <img src="IMG/javascript-.png" alt="JAVASCRIPT" class="logo-habilidades">
+                        <img src="IMG/icones/javascript.png" alt="JAVASCRIPT" class="logo-habilidades">
                         <p class="card-texto">JAVASCRIPT</p>
                     </section>
                     <section class="card">
-                        <img src="IMG/react.png" alt="REACT" class="logo-habilidades">
-                        <p class="card-texto">REACT.JS</p>
+                        <img src="IMG/icones/tailwind.png" alt="NODE" class="logo-habilidades">
+                        <p class="card-texto">tailwind.css</p>
                     </section>
 
                 </div>
                 <div class="hab-col-2">
                     <section class="card">
-                        <img src="IMG/node.png" alt="NODE" class="logo-habilidades">
+                        <img src="IMG/icones/node.png" alt="NODE" class="logo-habilidades">
                         <p class="card-texto">NODE.JS</p>
                     </section>
                     <section class="card">
-                        <img src="IMG/mysql.png" alt="MYSQL" class="logo-habilidades">
+                        <img src="IMG/icones/mysql.png" alt="MYSQL" class="logo-habilidades">
                         <p class="card-texto">MYSQL</p>
                     </section>
                     <section class="card">
-                        <img src="IMG/git.png" alt="GIT" class="logo-habilidades">
+                        <img src="IMG/icones/git.png" alt="GIT" class="logo-habilidades">
                         <p class="card-texto">GIT</p>
                     </section>
                     <section class="card">
-                        <img src="IMG/figma.png" alt="FIGMA" class="logo-habilidades">
+                        <img src="IMG/icones/figma.png" alt="FIGMA" class="logo-habilidades">
                         <p class="card-texto">FIGMA</p>
                     </section>
+                </div>
+                <div class="hab-col-3">
+                    <!-- <section class="card">
+                        <img src="IMG/icones/typescript.png" alt="NODE" class="logo-habilidades">
+                        <p class="card-texto">typescript</p>
+                    </section>
+                    <section class="card">
+                        <img src="IMG/icones/react.png" alt="REACT" class="logo-habilidades">
+                        <p class="card-texto">REACT.JS</p>
+                    </section> -->
+
+
                 </div>
             </div>
         </section>
@@ -109,25 +124,40 @@
 
         <section class="projetos animacao" id="projetos">
             <h2 class="titulo">projetos </h2>
+            <div class="container-projetos">
 
-            <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true"
-                centered-slides="true" slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0"
-                coverflow-effect-depth="100" coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true"
-                initial-slide="1">
+                <div class="card-projeto">
+                    <img src="/IMG/projetos/projeto.png" alt="Projeto Barbearia">
+                    <h3 class="projeto-titulo">Projeto barberia</h3>
+                    <p class="projeto-tec">Tecnologias Usadas: <br> <span>HTML, CSS, JavaScript , Node.Js e MySQL</span>
+                    </p>
+                    <p class="projeto-texto">Este é um projeto de sistema de barbearia desenvolvido com Node.js, que
+                        inclui funcionalidades CRUD (Create, Read, Update, Delete). O objetivo do sistema é facilitar a
+                        gestão de clientes, agendamentos e serviços oferecidos pela barbearia.</p>
+                    <div class="projetos-links">
+                        <a href="#" title="Link do Site"> <i class="fa-solid fa-link"></i></a>
+                        <a href="https://github.com/Mateusveloso26/Barbearia"  title="Código fonte"><i class="fa-brands fa-github"></i></a>
+                    </div>
 
-                <swiper-slide>
-                    <a href="https://github.com/Mateusveloso26"> <img src="/IMG/carr.jpg" alt="projeto 1" /></a>
-                </swiper-slide>
+                </div>
 
-                <swiper-slide>
-                    <a href="https://github.com/Mateusveloso26"> <img src="/IMG/carr.jpg" alt="projeto 2" /></a>
-                </swiper-slide>
+                <div class="card-projeto">
+                    <img src="/IMG/projetos/projeto2.png" alt="Projeto Fiber Fast">
+                    <h3 class="projeto-titulo">Projeto Fiber-fast</h3>
+                    <p class="projeto-tec">Tecnologias Usadas: <br> <span>HTML, CSS e JavaScript</span></p>
+                    <p class="projeto-texto">Desenvolvi um site para a provedora de internet Fiber Fast Telecom
+                        utilizando HTML, CSS e JavaScript. Este projeto foi concebido com o objetivo de fornecer uma
+                        plataforma moderna e responsiva, destacando os serviços de alta qualidade e as ofertas da
+                        empresa.</p>
+                    <div class="projetos-links">
+                        <a href="https://fiberfastelecom.com.br/" title="Link do Site"> <i class="fa-solid fa-link"></i></a>
+                        <a href="https://github.com/Mateusveloso26/SiteFiber" title="Código fonte"><i class="fa-brands fa-github"></i></a>
+                    </div>
 
-                <swiper-slide>
-                    <a href="https://github.com/Mateusveloso26"> <img src="/IMG/carr.jpg" alt="projeto 3" /></a>
-                </swiper-slide>
+                </div>
 
-            </swiper-container>
+
+            </div>
         </section>
 
 
@@ -144,7 +174,6 @@
             <a href="mailto:mateusveloso2608@gmail.com" target="_blank" class="email">
                 <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" style="width: 24px;">
             </a>
-
         </div>
 
         <footer>
@@ -153,7 +182,6 @@
 
     </main>
     <script src=" js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 </body>
 
 </html>
