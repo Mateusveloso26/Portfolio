@@ -5,7 +5,6 @@ Bem-vindo ao meu portfólio! Este projeto foi criado para apresentar meus trabal
 * HTML
 * CSS
 * JavaScript
-* Swiper
 * ScrollReveal
 
 Você também pode acessar meu portfólio online através do link abaixo:
