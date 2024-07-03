@@ -36,6 +36,7 @@
     .btn-inicio {
         display: block;
     }
+
     .container-projetos {
         flex-direction: column;
         align-items: center;
@@ -53,7 +54,8 @@
         padding: 96px 0;
         margin: 0 10px;
     }
-    .card{
+
+    .card {
         width: 120px;
     }
 }
