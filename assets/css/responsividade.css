@@ -59,3 +59,10 @@
         width: 120px;
     }
 }
+
+@media (min-width: 1400px) {
+    .inicio-texto {
+        margin: 40px 200px;
+
+    }
+}

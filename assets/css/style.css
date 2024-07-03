@@ -117,11 +117,6 @@ main {
     }
 }
 
-.texto-banner {
-    color: #fff;
-    text-align: justify;
-    margin: 40px 30px;
-}
 
 .inicio-titulo {
     background: linear-gradient(45deg, #0053CE, #FFFFFF);
@@ -164,11 +159,15 @@ main {
     margin-top: 10px;
 }
 
-.left p {
+.inicio-texto {
+    color: #fff;
+    text-align: justify;
+    margin: 40px 30px;
     font-size: 16px;
-    line-height: 1.5;
-    margin-top: 10px;
+    
 }
+
+
 
 .btn-inicio {
     padding: 12px;
