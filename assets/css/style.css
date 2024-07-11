@@ -40,14 +40,14 @@ main {
 
 .header {
     background-color: #080b1a;
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
 .nav-bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 40px;
+    margin: 0 90px;
 }
 
 .logo {
@@ -55,6 +55,10 @@ main {
     color: #fff;
     font-weight: bold;
     font-size: 35px;
+}
+.logo:hover{
+    color:  #4C8FF2;
+    transition: all 0.5s;
 }
 
 .menu-itens {
@@ -164,10 +168,8 @@ main {
     text-align: justify;
     margin: 40px 30px;
     font-size: 16px;
-    
+
 }
-
-
 
 .btn-inicio {
     padding: 12px;
@@ -288,11 +290,11 @@ main {
     padding: 20px;
     border-radius: 4px;
     overflow: hidden;
-    margin: 20px 0; 
+    margin: 20px 0;
 
 }
 
- .img-projeto {
+.img-projeto {
     width: 100%;
     height: auto;
 }
@@ -303,19 +305,20 @@ main {
 }
 
 .projeto-titulo {
-    margin: 5px 0 ;
+    margin: 5px 0;
     text-transform: capitalize;
-    
+
 }
 
 .projeto-tec {
     font-weight: 600;
     color: #4C8FF2;
-    
+
 }
-.projeto-tec span{
-    color:#fff;
-    
+
+.projeto-tec span {
+    color: #fff;
+
 }
 
 .projeto-texto {
@@ -323,19 +326,21 @@ main {
     font-size: 16px;
 }
 
-.projetos-links{
+.projetos-links {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     gap: 20px;
-    margin:10px 0 ;
+    margin: 10px 0;
 }
+
 .projetos-links i {
     color: #fff;
     padding: 10px;
     font-size: 30px;
     transition: all 0.3s;
 }
-.projetos-links i:hover{
+
+.projetos-links i:hover {
     color: #dfdfe0c5;
 }
 
