@@ -17,6 +17,7 @@
     .logo {
         margin: auto;
     }
+
     .container {
         flex-direction: column;
     }
@@ -46,6 +47,14 @@
     .btn-inicio {
         display: block;
     }
+    .container-cards {
+        gap: 15px;
+    }
+
+    .hab-col-1,
+    .hab-col-2 {
+        gap: 15px; 
+    }
 
     .container-projetos {
         flex-direction: column;
@@ -55,13 +64,11 @@
     .card-projeto {
         width: 100%;
     }
-    
 
 }
 
 @media (min-width: 1400px) {
     .inicio-texto {
         margin: 40px 200px;
-
     }
 }

@@ -226,12 +226,11 @@ main {
 }
 
 .hab-col-1,
-.hab-col-2,
-.hab-col-3 {
+.hab-col-2{
     display: flex;
     justify-content: center;
     margin: auto;
-    gap: 40px;
+    gap:40px;
     flex-wrap: wrap;
 }
 
@@ -307,16 +306,14 @@ main {
 .projeto-titulo {
     margin: 5px 0;
     text-transform: capitalize;
-
 }
 
-.projeto-tec {
-    font-weight: 600;
+.projeto-tech {
+    font-weight: 500;
     color: #4C8FF2;
-
 }
 
-.projeto-tec span {
+.projeto-tech span {
     color: #fff;
 
 }
