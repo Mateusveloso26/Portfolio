@@ -10,13 +10,13 @@
 }
 
 @media (max-width: 800px) {
-   
-    .menu-itens {
+
+    header {
         display: none;
     }
 
-    .logo {
-        margin: auto;
+    .menu-mobile {
+        display: flex;
     }
 
     .container {
