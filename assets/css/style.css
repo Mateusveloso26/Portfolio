@@ -441,6 +441,7 @@ footer p {
     color: #FFFFFF;
     display: block;
     font-size: 25px;
+    text-transform: uppercase;
     transition: 0.3s;
 }
 
