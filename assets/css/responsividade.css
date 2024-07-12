@@ -10,6 +10,7 @@
 }
 
 @media (max-width: 800px) {
+   
     .menu-itens {
         display: none;
     }
@@ -47,13 +48,13 @@
     .btn-inicio {
         display: block;
     }
-    .container-cards {
-        gap: 15px;
-    }
 
-    .hab-col-1,
-    .hab-col-2 {
-        gap: 15px; 
+
+    .habilidades {
+        display: flex;
+        flex-direction: column;
+        padding: 96px 0;
+        margin: 0 10px;
     }
 
     .container-projetos {
@@ -64,8 +65,8 @@
     .card-projeto {
         width: 100%;
     }
-
 }
+
 
 @media (min-width: 1400px) {
     .inicio-texto {
