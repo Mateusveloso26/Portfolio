@@ -1,194 +1,400 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsividade.css">
-    <link rel="shortcut icon" href="assets/img/projetos/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <meta name="description" content="Portfólio Mateus Fernandes">
-    <meta name="keywords" content="dev,programação,portfólio,projetos">
-    <meta name="author" content="Mateus Fernandes">
-    <script src="https://kit.fontawesome.com/8b299f3b3f.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsividade.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <meta name="description" content="Portfólio Mateus Fernandes" />
+    <meta name="keywords" content="dev,programação,portfólio,projetos" />
+    <meta name="author" content="Mateus Fernandes" />
+    <script
+      src="https://kit.fontawesome.com/8b299f3b3f.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>Portfólio MF</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <header class="header">
-        <nav class="nav-bar">
-            <a href="/" class="logo">&lt;/ MF &gt;</a>
-            <ul class="menu-itens">
-                <li><a href="#sobre">Sobre mim</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-            </ul>
-        </nav>
+      <nav class="nav-bar">
+        <a href="/" class="logo">&lt;/ MF &gt;</a>
+        <ul class="menu-itens">
+          <li><a href="#sobre">Sobre mim</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+        </ul>
+      </nav>
     </header>
 
     <div class="menu-mobile">
-        <div class="menuNav" id="menuNav">
-            <a href="javascript:void(0)" class="btnFechar" onclick="fecharMenu()"> &times; </a>
-            <div class="nav">
-                <a href="#sobre"onclick="fecharMenu()" class="navegar">Sobre mim</a>
-                <a href="#habilidades" onclick="fecharMenu()" class="navegar">Habilidades</a>
-                <a href="#projetos" onclick="fecharMenu()" class="navegar">Projetos</a>
-            </div>
+      <div class="menuNav" id="menuNav">
+        <a href="javascript:void(0)" class="btnFechar" onclick="fecharMenu()">
+          &times;
+        </a>
+        <div class="nav">
+          <a href="#sobre" onclick="fecharMenu()" class="navegar">Sobre mim</a>
+          <a href="#habilidades" onclick="fecharMenu()" class="navegar"
+            >Habilidades</a
+          >
+          <a href="#projetos" onclick="fecharMenu()" class="navegar"
+            >Projetos</a
+          >
         </div>
-        <a href="/" class="logo">&lt;/ MF &gt;</a>
-        <button class="btn-nav" onclick="abrirMenu()">
-            <i class="fa fa-bars"></i>
-        </button>
+      </div>
+      <a href="/" class="logo">&lt;/ MF &gt;</a>
+      <button class="btn-nav" onclick="abrirMenu()">
+        <i class="fa fa-bars"></i>
+      </button>
     </div>
 
-    <hr style="background: rgb(255, 255, 255); width: 100%; height: 1px;">
+    <hr style="background: rgb(255, 255, 255); width: 100%; height: 1px" />
 
     <main>
+      <section class="container animacao">
+        <section class="left">
+          <h1 class="inicio-titulo">Mateus Fernandes</h1>
+          <h4 class="inicio-subtitulo">Desenvolvedor</h4>
+          <p class="inicio-texto">
+            Olá ! Sou um estudante de Desenvolvimento de Sistemas com foco em
+            Fullstack. Sou impulsionado pela vontade de resolver problemas e
+            pela minha busca incessante por aprendizado.
+          </p>
+          <a href="assets/cv/cv.pdf" class="btn-inicio" target="_blank"
+            >Download CV</a
+          >
+          <a href="https://bit.ly/3LdDuB7" class="btn-inicio" target="_blank"
+            >Fale comigo</a
+          >
+        </section>
+        <section class="right">
+          <img src="assets/img/eu.png" alt="Minha foto" class="img-perfil" />
+        </section>
+      </section>
 
-        <section class="container animacao">
-            <section class="left">
-                <h1 class="inicio-titulo">Mateus Fernandes</h1>
-                <h4 class="inicio-subtitulo">Desenvolvedor</h4>
-                <p class="inicio-texto">Olá ! Sou um estudante de Desenvolvimento de Sistemas com foco em Fullstack. Sou
-                    impulsionado pela vontade de resolver problemas e pela minha busca incessante por aprendizado.</p>
-                <a href="assets/cv/cv.pdf" class="btn-inicio" target="_blank">Download CV</a>
-                <a href="https://bit.ly/3LdDuB7" class="btn-inicio" target="_blank">Fale comigo</a>
+      <section class="sobre animacao" id="sobre">
+        <h2 class="titulo">Sobre mim</h2>
+        <p class="sobre-texto">
+          Meu primeiro contato com a programação ocorreu no início de 2023,
+          quando iniciei meu curso técnico no Senai Cimatec. Após um ano de
+          estudos dedicados, descobri meu interesse pelo desenvolvimento
+          fullstack, especialmente com JavaScript e Node.js. Acredito que a
+          versatilidade e o domínio de ambas as áreas me permitirão criar
+          soluções mais completas e eficientes. Estou sempre disposto a aprender
+          novas tecnologias e enfrentar desafios que me ajudem a alcançar meus
+          objetivos. Acredito que a constante evolução é essencial no mundo da
+          tecnologia.
+        </p>
+        <h3 class="sobre-texto">Graduação:</h3>
+        <p class="sobre-texto sobre-graduacao">
+          Técnico Desenvolvimento de Sistemas (2023-2024) - Senai Cimatec
+        </p>
+        <p class="sobre-texto sobre-graduacao">
+          Análise e Desenvolvimento de Sistemas (2024-2026) - Centro
+          Universitário Jorge Amado
+        </p>
+      </section>
+
+      <section class="habilidades animacao" id="habilidades">
+        <h2 class="titulo">Habilidades</h2>
+        <div class="container-cards">
+          <div class="hab-col-1">
+            <section class="card">
+              <img
+                src="assets/img/icones/HTML.png"
+                alt="HTML"
+                class="logo-habilidades"
+              />
+              <p class="card-texto">HTML</p>
             </section>
-            <section class="right">
-                <img src="assets/img/eu.png" alt="Minha foto" class="img-perfil">
+            <section class="card">
+              <img
+                src="assets/img/icones/bootstrap.png"
+                alt="NODE"
+                class="logo-habilidades"
+              />
+              <p class="card-texto">Bootstrap</p>
             </section>
-        </section>
+            <section class="card">
+              <img
+                src="assets/img/icones/css.png"
+                alt="CSS"
+                class="logo-habilidades"
+              />
+              <p class="card-texto">CSS</p>
+            </section>
 
-        <section class="sobre animacao" id="sobre">
-            <h2 class="titulo">Sobre mim</h2>
-            <p class="sobre-texto">Meu primeiro contato com a programação ocorreu no início de 2023, quando iniciei meu
-                curso técnico no Senai Cimatec. Após um ano de estudos dedicados, descobri meu interesse pelo
-                desenvolvimento fullstack, especialmente com JavaScript e Node.js. Acredito que a versatilidade e o
-                domínio de ambas as áreas me permitirão criar soluções mais completas e eficientes. Estou sempre
-                disposto a aprender novas tecnologias e enfrentar desafios que me ajudem a alcançar meus objetivos.
-                Acredito que a constante evolução é essencial no mundo da tecnologia.
-            </p>
-            <h3 class="sobre-texto">Graduação:</h3>
-            <p class="sobre-texto sobre-graduacao">Técnico Desenvolvimento de Sistemas (2023-2024) - Senai Cimatec</p>
-            <p class="sobre-texto sobre-graduacao">Análise e Desenvolvimento de Sistemas (2024-2026) - Centro
-                Universitário Jorge Amado</p>
-        </section>
+            <section class="card">
+              <img
+                src="assets/img/icones/tailwind.png"
+                alt="NODE"
+                class="logo-habilidades"
+              />
+              <p class="card-texto">tailwind.css</p>
+            </section>
+          </div>
 
-        <section class="habilidades animacao" id="habilidades">
-            <h2 class="titulo">Habilidades</h2>
-            <div class="container-cards">
-                <div class="hab-col-1">
-                    <section class="card">
-                        <img src="assets/img/icones/HTML.png" alt="HTML" class="logo-habilidades">
-                        <p class="card-texto">HTML</p>
-                    </section>
-                    <section class="card">
-                        <img src="assets/img/icones/css.png" alt="CSS" class="logo-habilidades">
-                        <p class="card-texto">CSS</p>
-                    </section>
+          <div class="hab-col-2">
+            <section class="card">
+              <img
+                src="assets/img/icones/javascript.png"
+                alt="JAVASCRIPT"
+                class="logo-habilidades"
+              />
+              <p class="card-texto">JAVASCRIPT</p>
+            </section>
 
-                    <section class="card">
-                        <img src="assets/img/icones/tailwind.png" alt="NODE" class="logo-habilidades">
-                        <p class="card-texto">tailwind.css</p>
-                    </section>
+            <section class="card">
+              <img
+                src="assets/img/icones/node.png"
+                alt="NODE"
+                class="logo-habilidades"
+              />
+              <p class="card-texto">NODE.JS</p>
+            </section>
 
-                    <section class="card">
-                        <img src="assets/img/icones/javascript.png" alt="JAVASCRIPT" class="logo-habilidades">
-                        <p class="card-texto">JAVASCRIPT</p>
-                    </section>
+            <section class="card">
+              <img
+                src="assets/img/icones/react.png"
+                alt="GIT"
+                class="logo-habilidades"
+              />
+              <p class="card-texto">react.js</p>
+            </section>
 
+            <section class="card">
+              <img
+                src="assets/img/icones/typescript.png"
+                alt="FIGMA"
+                class="logo-habilidades"
+              />
+              <p class="card-texto">TypeScript</p>
+            </section>
+          </div>
 
-                </div>
-                <div class="hab-col-2">
-                    <section class="card">
-                        <img src="assets/img/icones/node.png" alt="NODE" class="logo-habilidades">
-                        <p class="card-texto">NODE.JS</p>
-                    </section>
-                    <section class="card">
-                        <img src="assets/img/icones/mysql.png" alt="MYSQL" class="logo-habilidades">
-                        <p class="card-texto">MYSQL</p>
-                    </section>
-                    <section class="card">
-                        <img src="assets/img/icones/git.png" alt="GIT" class="logo-habilidades">
-                        <p class="card-texto">GIT</p>
-                    </section>
-                    <section class="card">
-                        <img src="assets/img/icones/figma.png" alt="FIGMA" class="logo-habilidades">
-                        <p class="card-texto">FIGMA</p>
-                    </section>
-                </div>
+          <div class="hab-col-3">
+            <section class="card">
+              <img
+                src="assets/img/icones/python.png"
+                alt="MYSQL"
+                class="logo-habilidades"
+              />
+              <p class="card-texto">Python</p>
+            </section>
 
-            </div>
-        </section>
+            <section class="card">
+              <img
+                src="assets/img/icones/mysql.png"
+                alt="MYSQL"
+                class="logo-habilidades"
+              />
+              <p class="card-texto">MYSQL</p>
+            </section>
 
+            <section class="card">
+              <img
+                src="assets/img/icones/git.png"
+                alt="GIT"
+                class="logo-habilidades"
+              />
+              <p class="card-texto">GIT</p>
+            </section>
 
-        <section class="projetos animacao" id="projetos">
-            <h2 class="titulo">Projetos</h2>
-            <div class="container-projetos">
-
-                <div class="card-projeto">
-                    <img src="assets/img/projetos/projeto.png" alt="Projeto Barbearia">
-                    <h3 class="projeto-titulo">Projeto barberia</h3>
-                    <p class="projeto-tech">Tecnologias Usadas: <br> <span>HTML, CSS, JavaScript , Node.Js e
-                            MySQL</span>
-                    </p>
-                    <p class="projeto-texto">Este é um projeto de sistema de barbearia desenvolvido com Node.js, que
-                        inclui funcionalidades CRUD (Create, Read, Update, Delete). O objetivo do sistema é facilitar a
-                        gestão de clientes, agendamentos e serviços oferecidos pela barbearia.</p>
-                    <div class="projetos-links">
-                        <a href="#" title="Link do Site"> <i class="fa-solid fa-link"></i></a>
-                        <a href="https://github.com/Mateusveloso26/Barbearia" title="Código fonte"><i
-                                class="fa-brands fa-github"></i></a>
-                    </div>
-
-                </div>
-
-                <div class="card-projeto">
-                    <img src="assets/img/projetos/projeto2.png" alt="Projeto Fiber Fast">
-                    <h3 class="projeto-titulo">Projeto Fiber-fast</h3>
-                    <p class="projeto-tech">Tecnologias Usadas: <br> <span>HTML, CSS e JavaScript</span></p>
-                    <p class="projeto-texto">Desenvolvi um site para a provedora de internet Fiber Fast Telecom
-                        utilizando HTML, CSS e JavaScript. Este projeto foi concebido com o objetivo de fornecer uma
-                        plataforma moderna e responsiva, destacando os serviços de alta qualidade e as ofertas da
-                        empresa.</p>
-                    <div class="projetos-links">
-                        <a href="https://fiberfastelecom.com.br/" title="Link do Site"> <i
-                                class="fa-solid fa-link"></i></a>
-                        <a href="https://github.com/Mateusveloso26/SiteFiber" title="Código fonte"><i
-                                class="fa-brands fa-github"></i></a>
-                    </div>
-
-                </div>
-
-
-            </div>
-        </section>
-
-
-        <div class="fixed-buttons">
-            <a href="https://www.linkedin.com/in/mateusfernandesvn/" target="_blank" class="linkedin">
-                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" style="width: 24px;">
-            </a>
-            <a href="https://github.com/Mateusveloso26" target="_blank" class="github">
-                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" style="width: 24px;">
-            </a>
-            <a href="https://bit.ly/3LdDuB7" target="_blank" class="whatsapp">
-                <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" style="width: 24px;">
-            </a>
-            <a href="mailto:mateusveloso2608@gmail.com" target="_blank" class="email">
-                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" style="width: 24px;">
-            </a>
+            <section class="card">
+              <img
+                src="assets/img/icones/figma.png"
+                alt="FIGMA"
+                class="logo-habilidades"
+              />
+              <p class="card-texto">FIGMA</p>
+            </section>
+          </div>
         </div>
+      </section>
 
-        <footer>
-            <p>&COPY;2024 Mateus Fernandes. Todos os direitos reservados.</p>
-        </footer>
+      <section class="projetos animacao" id="projetos">
+        <h2 class="titulo">Projetos</h2>
+        <div class="container-projetos">
+          <div class="card-projeto">
+            <img src="assets/img/projetos/barber.png" alt="Projeto Barbearia" />
+            <h3 class="projeto-titulo">Projeto barberia</h3>
+            <p class="projeto-tech">
+              Tecnologias Usadas: <br />
+              <span>HTML, CSS, JavaScript , Node.Js e MySQL</span>
+            </p>
+            <p class="projeto-desc">
+              Este é um projeto de sistema de barbearia desenvolvido com
+              Node.js, que inclui funcionalidades CRUD (Create, Read, Update,
+              Delete). O objetivo do sistema é facilitar a gestão de clientes,
+              agendamentos e serviços oferecidos pela barbearia.
+            </p>
+            <div class="projetos-links">
+              <a href="#" title="Link do Site" target="_blank">
+                <i class="fa-solid fa-link"></i
+              ></a>
+              <a
+                href="https://github.com/Mateusveloso26/Barbearia"
+                title="Código fonte"
+                target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
 
+          <div class="card-projeto">
+            <img src="assets/img/projetos/fiber.png" alt="Projeto Fiber Fast" />
+            <h3 class="projeto-titulo">Projeto Fiber-fast</h3>
+            <p class="projeto-tech">
+              Tecnologias Usadas: <br />
+              <span>HTML, CSS e JavaScript</span>
+            </p>
+            <p class="projeto-desc">
+              Desenvolvi um site para a provedora de internet Fiber Fast Telecom
+              utilizando HTML, CSS e JavaScript. Este projeto foi concebido com
+              o objetivo de fornecer uma plataforma moderna e responsiva,
+              destacando os serviços de alta qualidade e as ofertas da empresa.
+            </p>
+            <div class="projetos-links">
+              <a
+                href="https://fiberfastelecom.com.br/"
+                title="Link do Site"
+                target="_blank"
+              >
+                <i class="fa-solid fa-link"></i
+              ></a>
+              <a
+                href="https://github.com/Mateusveloso26/SiteFiber"
+                title="Código fonte"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="card-projeto">
+            <img
+              src="assets/img/projetos/previsao.png"
+              alt="Projeto previsão do tempo"
+            />
+            <h3 class="projeto-titulo">Projeto Previsão do tempo</h3>
+            <p class="projeto-tech">
+              Tecnologias Usadas: <br />
+              <span>HTML, CSS e JavaScript</span>
+            </p>
+            <p class="projeto-desc">
+              Este é um projeto web que permite consultar a previsão do tempo
+              utilizando a API OpenWeatherMap. O projeto é desenvolvido com
+              HTML, CSS e JavaScript e exibe informações meteorológicas em tempo
+              real.
+            </p>
+            <div class="projetos-links">
+              <a
+                href="https://mfprevisaodotempo.netlify.app/"
+                title="Link do Site"
+                target="_blank"
+              >
+                <i class="fa-solid fa-link"></i
+              ></a>
+              <a
+                href="https://github.com/Mateusveloso26/Previsao-do-tempo"
+                title="Código fonte"
+                target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="card-projeto">
+            <img
+              src="assets/img/projetos/linktree.png"
+              alt="Projeto linktree"
+            />
+            <h3 class="projeto-titulo">Projeto linktree</h3>
+            <p class="projeto-tech">
+              Tecnologias Usadas: <br />
+              <span>HTML, CSS e JavaScript</span>
+            </p>
+            <p class="projeto-desc">
+              Este é um projeto web simples que utiliza HTML, CSS e JavaScript
+              para criar um site com um efeito de partículas de fundo. O projeto
+              inclui um arquivo JSON para configurar as partículas exibidas na
+              página.
+            </p>
+            <div class="projetos-links">
+              <a
+                href="https://mflinktree.netlify.app/"
+                title="Link do Site"
+                target="_blank"
+              >
+                <i class="fa-solid fa-link"></i
+              ></a>
+              <a
+                href="https://github.com/Mateusveloso26/Linktree"
+                title="Código fonte"
+                target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="fixed-buttons">
+        <a
+          href="https://www.linkedin.com/in/mateusfernandesvn/"
+          target="_blank"
+          class="linkedin"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+            alt="LinkedIn"
+            style="width: 24px"
+          />
+        </a>
+        <a
+          href="https://github.com/Mateusveloso26"
+          target="_blank"
+          class="github"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+            alt="GitHub"
+            style="width: 24px"
+          />
+        </a>
+        <a href="https://bit.ly/3LdDuB7" target="_blank" class="whatsapp">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/124/124034.png"
+            alt="WhatsApp"
+            style="width: 24px"
+          />
+        </a>
+        <a
+          href="mailto:mateusveloso2608@gmail.com"
+          target="_blank"
+          class="email"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/732/732200.png"
+            alt="Email"
+            style="width: 24px"
+          />
+        </a>
+      </div>
+
+      <footer>
+        <p>&COPY;2024 Mateus Fernandes. Todos os direitos reservados.</p>
+      </footer>
     </main>
     <script src="/assets/js/script.js"></script>
-</body>
-
+  </body>
 </html>
