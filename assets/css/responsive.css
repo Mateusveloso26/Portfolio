@@ -50,20 +50,22 @@
     }
 
 
-    .habilidades {
-        display: flex;
-        flex-direction: column;
-        padding: 96px 0;
-        margin: 0 10px;
+    .container-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+       
     }
+    
+    
 
     .container-projetos {
-        flex-direction: column;
-        align-items: center;
+        width: 20%; 
+    
     }
+    .container-projetos a{
 
-    .card-projeto {
-        width: 100%;
+        width: 180px;
+      
     }
 }
 
