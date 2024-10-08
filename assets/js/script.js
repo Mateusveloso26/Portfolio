@@ -1,5 +1,5 @@
 ScrollReveal().reveal('.animacao', {
-    delay: 400,
+    delay: 300,
     distance: '20px',
     origin: 'left',
     duration: 1000,
