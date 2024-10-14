@@ -34,9 +34,12 @@ main {
     color: #fff;
     text-transform: uppercase;
     text-align: center;
-    font-size: 39px;
+    font-size: 38px;
+    letter-spacing: 4px;
     margin-bottom: 60px;
 }
+
+
 
 .header {
     background-color: #080b1a;
@@ -126,7 +129,6 @@ main {
 .inicio-titulo {
     background: linear-gradient(45deg, #0053CE, #FFFFFF);
     font-size: 50px;
-    margin: 0;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -134,8 +136,7 @@ main {
 
 .inicio-subtitulo {
     color: #4C8FF2;
-    margin-bottom: 30px;
-    letter-spacing: 6px;
+    letter-spacing: 2px;
     text-transform: uppercase;
     white-space: nowrap;
     overflow: hidden;
@@ -167,22 +168,36 @@ main {
 .inicio-texto {
     color: #fff;
     text-align: justify;
-    margin: 40px 30px;
+    margin: 50px 0 50px 0;
     font-size: 16px;
 
 }
 
-.btn-inicio {
+.btn-contact {
     padding: 12px;
     border-radius: 4px;
     margin: 20px;
     background-color: #324bda;
     text-decoration: none;
     color: #fff;
-    transition: all 0.3s;
+    transition: ease-in-out 0.3s;
+}
+.btn-cv{
+    padding: 12px;
+    border-radius: 4px;
+    margin: 20px;
+    background-color: transparent;
+    border: 2px outset #324bda;
+    text-decoration: none;
+    color: #fff;
+    transition: ease-in-out 0.3s;
+}
+.btn-cv:hover {
+    background-color: #324bda;
 }
 
-.btn-inicio:hover {
+
+.btn-contact:hover {
     background-color: #6274d6;
 }
 
@@ -268,6 +283,7 @@ main {
 .projetos {
     background-color: var(--background1);
     padding: 96px 15px;
+    width: 100%;
 
 }
 
@@ -278,15 +294,17 @@ main {
     align-items: center;
     text-align: center;
     gap: 5px;
-    width: 50%;
+    width: 100%;
     margin: auto;
 }
 
 .container-projetos a {
-    text-decoration: none;
-    color: #fff;
-    width: 400px;
+    width: 60%;
+    display: flex;
     flex-direction: column;
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
     justify-content: center;
     align-items: center;
     margin: auto;
