@@ -155,8 +155,6 @@ main {
 }
 
 
-
-
 /* INICIO */
 .container {
     display: flex;
@@ -350,6 +348,11 @@ main {
     color: #fff;
     margin: 10px;
 }
+.card i {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto ;
+}
 
 .card:hover {
     transform: scale(1.1);
@@ -420,7 +423,7 @@ main {
 }
 
 .card-projeto img {
-    width: 35rem;
+    width:600px;
     transition: opacity 0.3s ease;
     height: auto;
 }
