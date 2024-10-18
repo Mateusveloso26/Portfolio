@@ -1,4 +1,5 @@
 @media (max-width: 400px) {
+   
     .habilidades {
         padding: 96px 0;
         margin: 0 10px;
@@ -6,6 +7,22 @@
 
     .card {
         width: 120px;
+    }
+    .card-projeto{
+        width: 100%;
+        display: flex;
+        text-align: center;
+
+        justify-content: center;
+    }
+    .card-projeto-tech{
+        text-align: center;
+        justify-content: center;
+    }
+    .card-projeto-link{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 }
 
@@ -23,9 +40,10 @@
         flex-direction: column;
     }
 
-    .btn-inicio {
-        margin: 20px auto;
-        width: 95%;
+    .btn-inicio ,.btn-cv {
+        margin: auto;
+        width: 70%;
+        
     }
 
     .left,
@@ -45,27 +63,20 @@
         margin: auto;
     }
 
-    .btn-inicio {
-        display: block;
-    }
-
-
     .container-cards {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-       
     }
     
-    
-
     .container-projetos {
         width: 20%; 
-    
     }
     .container-projetos a{
-
         width: 180px;
-      
+    }
+    .card-projeto img{
+        width: 30rem;
+        margin: 0 20px;
     }
 }
 

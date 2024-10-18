@@ -19,6 +19,7 @@
 
 ::-webkit-scrollbar-track {
     background: var(--background1);
+
 }
 
 ::-webkit-scrollbar-thumb {
@@ -38,8 +39,6 @@ main {
     letter-spacing: 4px;
     margin-bottom: 60px;
 }
-
-
 
 .header {
     background-color: #080b1a;
@@ -87,297 +86,6 @@ main {
 .menu-itens a:hover {
     color: #cecece;
 }
-
-/* INICIO */
-.container {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-}
-
-.left,
-.right {
-    width: 50%;
-    padding: 20px;
-}
-
-.img-perfil {
-    max-width: 100%;
-    height: auto;
-    width: 500px;
-}
-
-.img-perfil {
-    position: relative;
-    animation: flutuar 2s ease-in-out infinite alternate;
-}
-
-@keyframes flutuar {
-    0% {
-        top: 0;
-    }
-
-    100% {
-        top: 30px;
-    }
-}
-
-
-.inicio-titulo {
-    background: linear-gradient(45deg, #0053CE, #FFFFFF);
-    font-size: 50px;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.inicio-subtitulo {
-    color: #4C8FF2;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    animation: typing 2s steps(22) 1s 1 normal both, blink 0.5s step-end infinite alternate;
-}
-
-@keyframes typing {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 100%;
-    }
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent;
-    }
-}
-
-.left h4 {
-    font-size: 24px;
-    margin-top: 10px;
-}
-
-.inicio-texto {
-    color: #fff;
-    text-align: justify;
-    margin: 50px 0 50px 0;
-    font-size: 16px;
-
-}
-
-.btn-contact {
-    padding: 12px;
-    border-radius: 4px;
-    margin: 20px;
-    background-color: #324bda;
-    text-decoration: none;
-    color: #fff;
-    transition: ease-in-out 0.3s;
-}
-.btn-cv{
-    padding: 12px;
-    border-radius: 4px;
-    margin: 20px;
-    background-color: transparent;
-    border: 2px outset #324bda;
-    text-decoration: none;
-    color: #fff;
-    transition: ease-in-out 0.3s;
-}
-.btn-cv:hover {
-    background-color: #324bda;
-}
-
-
-.btn-contact:hover {
-    background-color: #6274d6;
-}
-
-/* SOBRE MIM */
-.sobre {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    padding: 96px 15px;
-    justify-content: center;
-    margin: auto;
-    text-align: justify;
-    font-size: 16px;
-    background-color: var(--background1);
-}
-
-.sobre-texto {
-    color: #fff;
-    padding: 10px;
-    margin: 0 20%;
-
-}
-
-.sobre-graduacao {
-    color: #dfdfe0c5;
-}
-
-.sobre-graduacao::before {
-    content: "●";
-    margin-right: 5px;
-    color: #fff;
-}
-
-/* HABILIDADES */
-.habilidades {
-    padding: 96px 15px;
-}
-
-.container-cards {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 5px;
-    width: 50%;
-    margin: auto;
-}
-
-.card {
-    background-color: #080b1a;
-    width: 150px;
-    height: auto;
-    justify-self: center;
-    border-radius: 10px 0 10px 0;
-    box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-out;
-    border: 1px solid var(--azul-1);
-    color: #fff;
-    margin: 10px;
-}
-
-.card:hover {
-    transform: scale(1.1);
-}
-
-.logo-habilidades {
-    width: 70px;
-    display: block;
-    margin: 10px auto;
-}
-
-.card-texto {
-    color: #fff;
-    font-size: 14px;
-    margin: 15px 0;
-    text-transform: uppercase;
-    font-weight: 400;
-    text-align: center;
-}
-
-/* CONTAINER PROJETOS */
-.projetos {
-    background-color: var(--background1);
-    padding: 96px 15px;
-    width: 100%;
-
-}
-
-.container-projetos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 5px;
-    width: 100%;
-    margin: auto;
-}
-
-.container-projetos a {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    padding: 10px;
-    color: #fff;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.container-projetos img {
-    width: 100%;
-    transition: all 0.4s;
-}
-
-.container-projetos img:hover {
-    transform: scale(1.1);
-}
-
-
-/* CONTATO */
-.fixed-buttons {
-    position: fixed;
-    top: 75%;
-    right: 0;
-    transform: translateY(-50%);
-    z-index: 1000;
-    display: flex;
-    flex-direction: column;
-}
-
-.fixed-buttons a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    margin: 5px 10px;
-    color: white;
-    text-decoration: none;
-    border-radius: 25px;
-    transition: background-color 0.3s;
-}
-
-.fixed-buttons a:hover {
-    opacity: 0.8;
-}
-
-.linkedin {
-    background-color: #ffffff;
-}
-
-.github {
-    background-color: #ffffff;
-}
-
-.whatsapp {
-    background-color: #25d366;
-}
-
-.email {
-    background-color: #d44638;
-}
-
-
-/* FOOTER */
-footer {
-    background-color: var(--background);
-    padding: 20px;
-    text-align: center;
-    color: #fff; 
-}
-
-
-
-
 
 .menu-mobile {
     background-color: var(--background1);
@@ -444,4 +152,344 @@ footer {
 
 .btnFechar:hover {
     transform: scale(1.4);
+}
+
+
+
+
+/* INICIO */
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.left,
+.right {
+    width: 50%;
+    padding: 20px;
+}
+
+.img-perfil {
+    max-width: 100%;
+    height: auto;
+    width: 500px;
+}
+
+.img-perfil {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+
+.inicio-titulo {
+    background: linear-gradient(45deg, #0053CE, #FFFFFF);
+    font-size: 50px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.inicio-subtitulo {
+    color: #4C8FF2;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.left h4 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.inicio-texto {
+    color: #fff;
+    text-align: justify;
+    margin: 50px 0 50px 0;
+    font-size: 16px;
+
+}
+
+.btn-contact {
+    padding: 12px;
+    border-radius: 4px;
+    margin: 20px;
+    background-color: #324bda;
+    text-decoration: none;
+    color: #fff;
+    transition: ease-in-out 0.3s;
+}
+
+.btn-cv {
+    padding: 12px;
+    border-radius: 4px;
+    margin: 20px;
+    background-color: transparent;
+    border: 2px outset #324bda;
+    text-decoration: none;
+    color: #fff;
+    transition: ease-in-out 0.3s;
+}
+
+.btn-cv:hover {
+    background-color: #324bda;
+}
+
+
+.btn-contact:hover {
+    background-color: #6274d6;
+}
+
+/* SOBRE MIM */
+.sobre {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 96px 15px;
+    justify-content: center;
+    margin: auto;
+    text-align: justify;
+    font-size: 16px;
+    background-color: var(--background1);
+}
+
+.sobre-texto {
+    color: #fff;
+    padding: 10px;
+    margin: 0 20%;
+
+}
+
+.sobre-graduacao {
+    color: #dfdfe0c5;
+}
+
+.sobre-graduacao::before {
+    content: "●";
+    margin-right: 5px;
+    color: #fff;
+}
+
+/* SERVIÇOS */
+.servicos {
+    width: 100%;
+    padding: 96px 15px;
+}
+
+.servicos-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card-servicos {
+    color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.card-servicos h3 {
+    margin: 10px 0;
+}
+
+.card-servicos i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #4A90E2;
+}
+
+.card-servicos:hover {
+    transform: translateY(-5px);
+}
+
+/* HABILIDADES */
+.habilidades {
+    padding: 96px 15px;
+    background-color: var(--background1);
+}
+
+.container-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    width: 50%;
+    margin: auto;
+}
+
+.card {
+    background-color: #080b1a;
+    width: 150px;
+    height: auto;
+    justify-self: center;
+    border-radius: 10px 0 10px 0;
+    box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-out;
+    border: 1px solid var(--azul-1);
+    color: #fff;
+    margin: 10px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.logo-habilidades {
+    width: 70px;
+    display: block;
+    margin: 10px auto;
+}
+
+.card-texto {
+    color: #fff;
+    font-size: 14px;
+    margin: 15px 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* CONTAINER PROJETOS */
+.projetos {
+    padding: 96px 15px;
+    background-color: var(--background);
+}
+
+.card-projeto {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 16px;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin: 40px 0;
+}
+
+.linha-vertical {
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    border-radius: 2px;
+}
+
+.card-projeto-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    max-width: 38rem;
+    color: white;
+    gap: 6px;
+}
+
+.card-projeto-titulo {
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.card-projeto-info p {
+    text-align: justify;
+    color: #bdbdbd;
+}
+
+.card-projeto-tech {
+    margin: 12px 0;
+    gap: 10px;
+}
+
+.card-projeto img {
+    width: 35rem;
+    transition: opacity 0.3s ease;
+    height: auto;
+}
+.card-projeto img:hover{
+    opacity: 0.7;
+}
+ 
+
+.card-projeto-link {
+    justify-content: center;
+    text-decoration: none;
+    background-color: var(--azul-1);
+    color: #fff;
+    padding: 4px;
+    width: 10em;
+    margin: auto;
+    border-radius: 6px;
+}
+
+
+/* CONTATO */
+.fixed-buttons {
+    position: fixed;
+    top: 75%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+.fixed-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin: 5px 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+.fixed-buttons a:hover {
+    opacity: 0.8;
+}
+
+.linkedin {
+    background-color: #ffffff;
+}
+
+.github {
+    background-color: #ffffff;
+}
+
+.whatsapp {
+    background-color: #25d366;
+}
+
+.email {
+    background-color: #d44638;
+}
+
+
+/* FOOTER */
+footer {
+    background-color: var(--background1);
+    padding: 20px;
+    text-align: center;
+    color: #fff;
 }

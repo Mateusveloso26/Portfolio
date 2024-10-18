@@ -12,6 +12,9 @@
   <meta name="keywords" content="dev,programação,portfólio,projetos" />
   <meta name="author" content="Mateus Fernandes" />
   <script src="https://kit.fontawesome.com/8b299f3b3f.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
   <script src="https://unpkg.com/scrollreveal"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5YYBV7FNM0"></script>
@@ -61,13 +64,12 @@
     <section class="container animacao">
       <section class="left">
         <h1 class="inicio-titulo">Mateus Fernandes</h1>
-        <h4 class="inicio-subtitulo">Desenvolvedor</h4>
+        <h4 class="inicio-subtitulo">Desenvolvedor Front-end</h4>
         <p class="inicio-texto">
-          Olá ! Sou um estudante de Desenvolvimento de Sistemas com foco em
-          Fullstack. Sou impulsionado pela vontade de resolver problemas e
-          pela minha busca incessante por aprendizado.
+          Sou desenvolvedor Front-End com foco em React e TypeScript, criando interfaces de usuário responsivas e
+          modernas.
         </p>
-        <a href="assets/cv/cv.pdf" class="btn-cv" target="_blank">Download CV</a>
+        <a href="assets/documentos/cv.pdf" class="btn-cv" target="_blank">Download CV</a>
         <a href="https://bit.ly/3LdDuB7" class="btn-contact" target="_blank">Fale comigo</a>
       </section>
       <section class="right">
@@ -78,15 +80,12 @@
     <section class="sobre animacao" id="sobre">
       <h2 class="titulo">Sobre mim</h2>
       <p class="sobre-texto">
-        Meu primeiro contato com a programação ocorreu no início de 2023,
-        quando iniciei meu curso técnico no Senai Cimatec. Após um ano de
-        estudos dedicados, descobri meu interesse pelo desenvolvimento
-        fullstack, especialmente com JavaScript e Node.js. Acredito que a
-        versatilidade e o domínio de ambas as áreas me permitirão criar
-        soluções mais completas e eficientes. Estou sempre disposto a aprender
-        novas tecnologias e enfrentar desafios que me ajudem a alcançar meus
-        objetivos. Acredito que a constante evolução é essencial no mundo da
-        tecnologia.
+        Meu primeiro contato com a programação ocorreu no início de 2023, durante o curso técnico no Senai Cimatec.
+        Desde então, me apaixonei pelo desenvolvimento front-end, com um foco especial em React e TypeScript,
+        ferramentas que me permitem criar interfaces dinâmicas e modernas para a web. Estou constantemente em busca de
+        aprender novas tecnologias e aprimorar minhas habilidades, com o objetivo de proporcionar experiências de
+        usuário intuitivas e envolventes. Acredito firmemente que a evolução constante e o aprendizado contínuo são
+        essenciais para acompanhar o ritmo acelerado do mundo da tecnologia.
       </p>
       <h3 class="sobre-texto">Graduação:</h3>
       <p class="sobre-texto sobre-graduacao">
@@ -96,6 +95,30 @@
         Análise e Desenvolvimento de Sistemas (2024-2026) - Centro
         Universitário Jorge Amado
       </p>
+    </section>
+
+    <section class="servicos animacao">
+      <h2 class="titulo">Serviços</h2>
+      <div class="servicos-container">
+        <div class="card-servicos">
+          <i class="fas fa-code"></i>
+          <h3>Aplicação Web</h3>
+          <p>Desenvolvimento de aplicações web personalizadas, otimizadas e responsivas.</p>
+        </div>
+
+        <div class="card-servicos">
+          <i class="fas fa-paint-brush"></i>
+          <h3>UI/UX Design</h3>
+          <p>Criação de interfaces intuitivas e envolventes para uma experiência positiva.</p>
+        </div>
+
+        <div class="card-servicos">
+          <i class="fas fa-search"></i>
+          <h3>SEO Google</h3>
+          <p>Otimização de sites para motores de busca, aumentando a visibilidade.</p>
+        </div>
+
+      </div>
     </section>
 
     <section class="habilidades animacao" id="habilidades">
@@ -160,19 +183,115 @@
       </div>
     </section>
 
-    <!-- <section class="projetos animacao" id="projetos">
-      <h2 class="titulo">Projetos</h2>
-      <div class="container-projetos">
+    <section class="projetos animacao">
+      <h2 class="titulo">Meus Projetos</h2>
 
-        <a href="https://criptomoedas-topaz.vercel.app/" target="_blank"><img src="/assets/img/projetos/criptomoeda.png" alt="Projeto criptomoeda">CRIPTOMOEDA</a>
+      <div class="card-projeto">
+        <img src="/assets/img/projetos/cripto.png" alt="imagem do projeto" />
+        <div class="card-projeto-info">
+          <h2 class="card-projeto-titulo">Criptomoedas</h2>
+          <p>Desenvolvi um projeto de monitoramento de criptomoedas em React e TypeScript, utilizando a API CoinCap para
+            capturar e exibir preços em tempo real. A interface intuitiva permite que os usuários acompanhem flutuações
+            de mercado e analisem tendências, oferecendo uma ferramenta valiosa para investidores.</p>
+          <div class="card-projeto-tech">
+            <i class="devicon-vitejs-plain colored" style="font-size: 30px;" title="Vite"></i>
+            <i class="devicon-react-original colored" style="font-size: 30px;" title="React"></i>
+            <i class="devicon-typescript-plain colored" style="font-size: 30px;" title="TypeScript"></i>
+            <i class="devicon-tailwindcss-original colored" style="font-size: 30px;" title="Tailwind"></i>
+            <i class="devicon-vercel-original colored" style="font-size: 30px; color: white;" title="Vercel"></i>
+          </div>
+          <a href="https://criptomoedas-topaz.vercel.app/" target="_blank" class="card-projeto-link">Ver projeto</a>
+        </div>
 
-        <a href="" target="_blank"><img src="/assets/img/projetos/mfJJ.png" alt="Projeto">MF JIU-JITSU</a>
+      </div>
+      <div class="linha-vertical"></div>
 
-        <a href="" target="_blank"><img src="/assets/img/projetos/rota360.png" alt="Projeto">ROTA 360</a>
+      <div class="card-projeto">
+        <img src="/assets/img/projetos/loja.png" alt="imagem do projeto">
+        <div class="card-projeto-info">
+          <h2 class="card-projeto-titulo">E-commerce</h2>
+          <p>Desenvolvi uma plataforma de e-commerce responsiva com funcionalidades de adicionar e remover produtos do
+            carrinho. Utilizei React e TypeScript para criar uma interface intuitiva e dinâmica, integrando dados de uma
+            API fake para simular um catálogo de produtos.</p>
+          <div class="card-projeto-tech">
+            <i class="devicon-vitejs-plain colored" style="font-size: 30px;" title="Vite"></i>
+            <i class="devicon-react-original colored" style="font-size: 30px;" title="React"></i>
+            <i class="devicon-typescript-plain colored" style="font-size: 30px;" title="TypeScript"></i>
+            <i class="devicon-swiper-original colored" style="font-size: 30px;" title="Swiper"></i>
+            <i class="devicon-tailwindcss-original colored" style="font-size: 30px;" title="Tailwind"></i>
+            <i class="devicon-axios-plain" style="font-size: 30px;" title="Axios"></i>
 
-        <a href="" target="_blank"><img src="/assets/img/projetos/fiber.png" alt="Projeto">FIBER FAST TELECOM</a>
+          </div>
+          <a href="https://github.com/Mateusveloso26/E-commerce" target="_blank" class="card-projeto-link">Ver
+            projeto</a>
+        </div>
 
-    </section> -->
+      </div>
+      <div class="linha-vertical"></div>
+
+      <div class="card-projeto">
+        <img src="/assets/img/projetos/barber.png" alt="imagem do projeto">
+        <div class="card-projeto-info">
+          <h2 class="card-projeto-titulo">Barbearia</h2>
+          <p>Este projeto foi desenvolvido para gerenciar os agendamentos de uma barbearia, permitindo que os
+            administradores visualizem, atualizem e excluam os agendamentos de maneira eficiente.</p>
+          <div class="card-projeto-tech">
+            <i class="devicon-nodejs-plain colored" style="font-size: 30px;" title="Node"></i>
+            <i class="devicon-nodemon-plain colored" style="font-size: 30px;" title="Nodemon"></i>
+            <i class="devicon-express-original colored" style="font-size: 30px;" title="Express"></i>
+            <i class="devicon-handlebars-original colored" style="font-size: 30px;" title="Express-Handlebars"></i>
+            <i class="devicon-swiper-original colored" style="font-size: 30px;" title="Swiper"></i>
+            <i class="devicon-mysql-original colored" style="font-size: 30px;" title="MYSQL"></i>
+            <i class="devicon-javascript-plain colored" style="font-size: 30px;" title="JavaScript"></i>
+            <i class="devicon-css3-plain colored" style="font-size: 30px;" title="CSS"></i>
+          </div>
+          <a href="https://github.com/Mateusveloso26/Sistema-Barbearia" target="_blank" class="card-projeto-link">Ver
+            projeto</a>
+        </div>
+
+      </div>
+      <div class="linha-vertical"></div>
+
+      <div class="card-projeto">
+        <img src="/assets/img/projetos/github.png" alt="imagem do projeto">
+        <div class="card-projeto-info">
+          <h2 class="card-projeto-titulo">Api GitHub</h2>
+          <p>Desenvolvi uma aplicação que permite buscar perfis de usuários utilizando a API do GitHub. A plataforma
+            fornece uma interface simples e intuitiva, onde os usuários podem inserir o nome de um perfil e visualizar
+            informações relevantes</p>
+          <div class="card-projeto-tech">
+            <i class="devicon-vitejs-plain colored" style="font-size: 30px;" title="Vite"></i>
+            <i class="devicon-react-original colored" style="font-size: 30px;" title="React"></i>
+            <i class="devicon-typescript-plain colored" style="font-size: 30px;" title="TypeScript"></i>
+            <i class="devicon-tailwindcss-original colored" style="font-size: 30px;" title="Tailwind"></i>
+            <i class="devicon-vercel-original colored" style="font-size: 30px; color: white;" title="Vercel"></i>
+          </div>
+          <a href="https://api-github-ruddy.vercel.app/" target="_blank" class="card-projeto-link">Ver projeto</a>
+        </div>
+
+      </div>
+      <div class="linha-vertical"></div>
+
+      <div class="card-projeto">
+        <img src="/assets/img/projetos/rota360.png" alt="imagem do projeto">
+        <div class="card-projeto-info">
+          <h2 class="card-projeto-titulo">Rota 360 Turismo</h2>
+          <p>Desenvolvi uma landing page para a Rota 360 Turismo com o principal objetivo de divulgar informações sobre
+            a excursão. Utilizando HTML, CSS e JavaScript, a interface é atrativa e responsiva, proporcionando uma
+            experiência de usuário agradável e facilitando a conversão de visitantes em clientes.</p>
+          <div class="card-projeto-tech">
+            <i class="devicon-html5-plain colored" style="font-size: 30px;" title="HTML"></i>
+            <i class="devicon-css3-plain colored" style="font-size: 30px;" title="CSS"></i>
+            <i class="devicon-javascript-plain colored" style="font-size: 30px;" title="JavaScript"></i>
+          </div>
+          <a href="https://rota360excursoes.com.br/" target="_blank" class="card-projeto-link">Ver projeto</a>
+        </div>
+
+      </div>
+      <div class="linha-vertical"></div>
+
+    </section>
+
 
     <div class="fixed-buttons">
       <a href="https://www.linkedin.com/in/mateusfernandesvn/" target="_blank" class="linkedin">
@@ -192,7 +311,9 @@
     <footer>
       <p>&COPY;2024 MF DEV. Todos os direitos reservados.</p>
     </footer>
+
   </main>
+
   <script src="/assets/js/script.js"></script>
 </body>
 
